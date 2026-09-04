@@ -29,6 +29,6 @@ body:
     id: fonti
     attributes:
       label: Fonti
-      placeholder: Inserisci titolo, autore o ente e collegamento alla fonte.
+      description: Inserisci titolo, autore o ente e collegamento alla fonte.
     validations:
       required: true
