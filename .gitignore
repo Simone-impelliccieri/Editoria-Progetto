@@ -1,0 +1,52 @@
+# Materiali di riferimento locali
+/Risorse/
+
+# File di sistema ed editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.bak
+*.tmp
+~$*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Variabili locali e segreti
+.env
+.env.*
+!.env.example
+
+# Output generati dal sito
+site/site/
+site/.cache/
+build/
+dist/
+
+# File temporanei LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.lof
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
