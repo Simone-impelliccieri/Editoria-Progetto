@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   color: #252b31;
@@ -114,32 +118,73 @@ main {
   color: #263f55;
 }
 
+.etichetta-campo {
+  display: inline-block;
+  margin: 0.25rem 0;
+  padding: 0.15rem 0.45rem;
+  color: white;
+  background: #36546f;
+}
+
+.voce h3 {
+  margin: 0 0 0.5rem;
+  padding: 0.45rem 0.6rem;
+  color: #263f55;
+  background: #dce3e8;
+  font-size: 1rem;
+}
+
 .traduzione {
-  margin: 0 0 1rem;
-  padding-bottom: 0.9rem;
+  margin: 0.75rem 0;
+  padding: 0.75rem 1rem;
   color: #525b63;
-  border-bottom: 1px solid #d9dee2;
+  background: #eef1f4;
   font-family: Georgia, serif;
 }
 
 .traduzione span {
+  color: #36546f;
   font-family: Arial, sans-serif;
   font-weight: bold;
 }
 
 .gruppo-relazioni {
-  margin: 0.7rem 0;
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.5rem;
+  margin: 0.35rem 0;
 }
 
 .gruppo-relazioni ul,
 .fonti ul {
-  margin-top: 0.2rem;
-  padding-left: 1.25rem;
+  margin: 0;
+  padding: 0.45rem 0.75rem 0.45rem 1.6rem;
+  background: white;
 }
 
+.gruppo-relazioni .etichetta {
+  margin: 0;
+  padding: 0.45rem 0.6rem;
+  background: #dce3e8;
+}
+
+.voce > section {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #eef1f4;
+}
+
+.voce > section.lingua-en,
 .fonti {
-  padding-top: 0.5rem;
-  border-top: 1px solid #d9dee2;
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.5rem;
+}
+
+.voce > section.lingua-en p {
+  margin: 0;
+  padding: 0.45rem 0.75rem;
+  background: white;
 }
 
 .pie-di-pagina {

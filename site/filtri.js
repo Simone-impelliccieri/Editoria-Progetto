@@ -24,6 +24,10 @@ function applicaFiltri() {
     elemento.hidden = lingua === "en";
   });
 
+  document.querySelectorAll(".voce > section:not([class])").forEach(function (elemento) {
+    elemento.hidden = lingua === "it";
+  });
+
 }
 
 filtroLingua.addEventListener("change", applicaFiltri);
