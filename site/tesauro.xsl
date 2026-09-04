@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Tesauro bilingue sulla governance dell'IA</title>
         <link rel="stylesheet" href="style.css"/>
+        <script src="filtri.js" defer="defer"></script>
       </head>
       <body>
         <header class="intestazione">
@@ -28,6 +29,41 @@
         </header>
 
         <main class="contenitore">
+          <section class="filtri" aria-labelledby="titolo-filtri">
+            <h2 id="titolo-filtri">Filtra le voci</h2>
+
+            <div class="campi-filtri">
+              <label>
+                Lingua visualizzata
+                <select id="filtro-lingua">
+                  <option value="entrambe">Inglese e italiano</option>
+                  <option value="en">Inglese</option>
+                  <option value="it">Italiano</option>
+                </select>
+              </label>
+
+              <label>
+                Relazione
+                <select id="filtro-relazione">
+                  <option value="">Tutte</option>
+                  <option value="bt">BT</option>
+                  <option value="nt">NT</option>
+                  <option value="rt">RT</option>
+                  <option value="uf">UF</option>
+                </select>
+              </label>
+
+              <label>
+                Fonte o standard
+                <select id="filtro-fonte">
+                  <option value="">Tutti</option>
+                  <option value="ai act">AI Act</option>
+                  <option value="nist">NIST</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
           <xsl:apply-templates select="tesauro/voce">
             <xsl:sort select="@id" data-type="number"/>
           </xsl:apply-templates>
@@ -45,14 +81,14 @@
   <xsl:template match="voce">
     <article class="voce">
       <p class="identificatore">ID <xsl:value-of select="@id"/></p>
-      <p class="etichetta-campo">EN</p>
-      <h2 lang="en"><xsl:value-of select="termineEN"/></h2>
-      <p class="traduzione" lang="it">
+      <p class="etichetta-campo lingua-en">EN</p>
+      <h2 class="lingua-en" lang="en"><xsl:value-of select="termineEN"/></h2>
+      <p class="traduzione lingua-it" lang="it">
         <span>IT (traduzione)</span><xsl:text>: </xsl:text>
         <xsl:value-of select="traduzioneIT"/>
       </p>
 
-      <section>
+      <section class="lingua-en">
         <h3>Definizione (EN)</h3>
         <p lang="en"><xsl:value-of select="definizioneEN"/></p>
       </section>
@@ -61,7 +97,7 @@
         <h3>Relazioni terminologiche</h3>
 
         <xsl:if test="bt">
-          <div class="gruppo-relazioni">
+          <div class="gruppo-relazioni relazione-bt">
             <p class="etichetta">BT (broader term)</p>
             <ul>
               <xsl:for-each select="bt">
@@ -72,7 +108,7 @@
         </xsl:if>
 
         <xsl:if test="nt">
-          <div class="gruppo-relazioni">
+          <div class="gruppo-relazioni relazione-nt">
             <p class="etichetta">NT (narrower term)</p>
             <ul>
               <xsl:for-each select="nt">
@@ -83,7 +119,7 @@
         </xsl:if>
 
         <xsl:if test="rt">
-          <div class="gruppo-relazioni">
+          <div class="gruppo-relazioni relazione-rt">
             <p class="etichetta">RT (related term)</p>
             <ul>
               <xsl:for-each select="rt">
@@ -94,7 +130,7 @@
         </xsl:if>
 
         <xsl:if test="uf">
-          <div class="gruppo-relazioni">
+          <div class="gruppo-relazioni relazione-uf">
             <p class="etichetta">UF (use for)</p>
             <ul>
               <xsl:for-each select="uf">
