@@ -1,8 +1,11 @@
 # Tesauro bilingue sulla governance dell'intelligenza artificiale
 
-Progetto d'esame di Editoria Digitale per l'appello dell'11 settembre 2026.
+Progetto d'esame di Editoria Digitale.
 
-L'obiettivo è progettare e documentare un workflow editoriale digitale riproducibile per la gestione di un tesauro bilingue inglese-italiano sulla governance dell'intelligenza artificiale. Il progetto dovrà consentire la pubblicazione online, la proposta motivata di aggiornamenti, la revisione editoriale e la tracciabilità delle modifiche.
+
+## Sito pubblicato
+
+Il tesauro è consultabile su [GitHub Pages](https://simone-impelliccieri.github.io/Editoria-Progetto/).
 
 ## Struttura della repository
 
@@ -13,3 +16,16 @@ scripts/     Script di validazione e generazione
 site/        Sorgenti e configurazione del sito web
 relazione/   Relazione del progetto d'esame
 ```
+
+## Generazione del sito
+
+Per installare le dipendenze e generare la pagina HTML:
+
+```text
+python -m pip install -r requirements.txt
+python scripts/genera_html.py
+```
+
+## Relazione
+
+La relazione del progetto si trova in [`relazione/relazione.md`](relazione/relazione.md).
