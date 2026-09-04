@@ -13,5 +13,3 @@ scripts/     Script di validazione e generazione
 site/        Sorgenti e configurazione del sito web
 relazione/   Relazione del progetto d'esame
 ```
-
-> prova
