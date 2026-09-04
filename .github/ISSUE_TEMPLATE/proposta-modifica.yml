@@ -1,21 +1,19 @@
 name: Proposta di modifica
-description: Suggerisci un aggiornamento; la decisione sarà motivata pubblicamente
-title: "[Proposta] "
+description: Suggerisci un aggiornamento
+title: "Proposta: "
 body:
   - type: input
-    id: voce
+    id: termine
     attributes:
-      label: ID o termine interessato
-      description: Indica l'ID della voce oppure il termine da aggiungere.
-      placeholder: "Esempio: ID 12"
+      label: Termine da aggiungere
     validations:
       required: true
 
   - type: textarea
-    id: modifica
+    id: dettagli
     attributes:
-      label: Modifica proposta
-      description: Descrivi con chiarezza che cosa dovrebbe essere aggiunto o modificato.
+      label: Dettagli della nuova voce
+      description: Descrivi che cosa dovrebbe contenere la nuova voce.
     validations:
       required: true
 
@@ -23,15 +21,14 @@ body:
     id: motivazione
     attributes:
       label: Motivazione
-      description: Spiega perché ritieni necessario questo aggiornamento.
+      description: Spiega perché il nuovo termine dovrebbe essere aggiunto al tesauro.
     validations:
       required: true
 
   - type: textarea
     id: fonti
     attributes:
-      label: Fonti di supporto
-      description: Indica riferimenti verificabili, come norme, standard o pubblicazioni.
+      label: Fonti
       placeholder: Inserisci titolo, autore o ente e collegamento alla fonte.
     validations:
       required: true

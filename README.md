@@ -18,12 +18,12 @@ relazione/   Relazione del progetto d'esame
 
 Dal sito è possibile selezionare **Proponi una modifica** e aprire una Issue su GitHub. Il modulo richiede obbligatoriamente:
 
-- l'ID o il termine interessato;
-- la modifica proposta;
+- il termine da aggiungere;
+- i dettagli della nuova voce;
 - la motivazione;
 - le fonti di supporto.
 
-La richiesta viene registrata pubblicamente senza modificare direttamente il tesauro. Il modulo è definito in `.github/ISSUE_TEMPLATE/proposta-modifica.yml`.
+La richiesta viene registrata pubblicamente senza modificare direttamente il tesauro. L'utente non deve scegliere l'ID: per la prima nuova voce approvata l'editor assegnerà l'ID `22`, proseguendo poi in ordine crescente. Il modulo è definito in `.github/ISSUE_TEMPLATE/proposta-modifica.yml`.
 
 ## Flusso editoriale
 
