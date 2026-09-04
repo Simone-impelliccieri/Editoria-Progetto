@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tesauro>
+  <voce id="1">
+    <termineEN>National accreditation body</termineEN>
+    <traduzioneIT>Organismo nazionale di accreditamento</traduzioneIT>
+    <definizioneEN>A body appointed by a Member State according to Regulation (EC) No 765/2008 responsible for carrying out accreditation with authority.</definizioneEN>
+    <bt>Conformity infrastructure</bt>
+    <rt>Accreditation</rt>
+    <rt>Notified body</rt>
+    <fonte>AI Act, Art. 3(31)</fonte>
+  </voce>
+
+  <voce id="2">
+    <termineEN>Scientific panel of independent experts</termineEN>
+    <traduzioneIT>Pannello scientifico di esperti indipendenti</traduzioneIT>
+    <definizioneEN>A body of experts established to advise the AI Office, especially on GPAI systemic risks and technical matters.</definizioneEN>
+    <bt>Advisory bodies</bt>
+    <rt>AI Office</rt>
+    <rt>Standardisation organisations</rt>
+    <uf>Expert group</uf>
+    <fonte>AI Act, Art. 3(61), Art. 90</fonte>
+  </voce>
+
+  <voce id="3">
+    <termineEN>Capability with high impact</termineEN>
+    <traduzioneIT>Capacità ad alto impatto</traduzioneIT>
+    <definizioneEN>A capability that equals or surpasses the capabilities recorded in the most advanced GPAI models, and which may pose systemic risks.</definizioneEN>
+    <bt>GPAI classification</bt>
+    <rt>Systemic risk</rt>
+    <rt>FLOPs threshold</rt>
+    <fonte>AI Act, Art. 3(64)</fonte>
+  </voce>
+
+  <voce id="5">
+    <termineEN>Substantial modification</termineEN>
+    <traduzioneIT>Modifica sostanziale</traduzioneIT>
+    <definizioneEN>A change to the AI system after its placing on the market or putting into service which is not foreseen or planned in the initial conformity assessment and which affects the compliance of the system with this Regulation.</definizioneEN>
+    <bt>Lifecycle of AI systems</bt>
+    <rt>Conformity assessment</rt>
+    <rt>System updates</rt>
+    <uf>Major modification</uf>
+    <fonte>AI Act, Art. 3(32)</fonte>
+  </voce>
+
+  <voce id="6">
+    <termineEN>Safety component of a product or system</termineEN>
+    <traduzioneIT>Componente di sicurezza di un prodotto o sistema</traduzioneIT>
+    <definizioneEN>A component of a product or of a system which serves to fulfil a safety function for that product or system, or the failure or malfunctioning of which endangers the health and safety of persons or property.</definizioneEN>
+    <bt>Product safety</bt>
+    <rt>High-risk AI systems</rt>
+    <fonte>AI Act, Art. 3(14)</fonte>
+  </voce>
+
+  <voce id="11">
+    <termineEN>Safety component</termineEN>
+    <traduzioneIT>Componente di sicurezza</traduzioneIT>
+    <definizioneEN>A component of a product or system that performs a safety function, the failure or malfunction of which endangers health, safety, or fundamental rights.</definizioneEN>
+    <bt>Product safety</bt>
+    <rt>High-risk AI systems</rt>
+    <uf>Safety part</uf>
+    <fonte>AI Act, Art. 3(39)</fonte>
+  </voce>
+
+  <voce id="12">
+    <termineEN>Notified body</termineEN>
+    <traduzioneIT>Organismo notificato</traduzioneIT>
+    <definizioneEN>A conformity assessment body designated in accordance with this Regulation to carry out conformity assessment tasks.</definizioneEN>
+    <bt>Conformity infrastructure</bt>
+    <rt>Conformity assessment</rt>
+    <uf>Certification body</uf>
+    <fonte>AI Act, Art. 3(22)</fonte>
+  </voce>
+
+  <voce id="14">
+    <termineEN>Risk management system</termineEN>
+    <traduzioneIT>Sistema di gestione del rischio</traduzioneIT>
+    <definizioneEN>A continuous iterative process run throughout the entire lifecycle of a high-risk AI system, requiring regular updates, monitoring, and mitigation of risks.</definizioneEN>
+    <bt>Compliance mechanisms</bt>
+    <rt>Preventive action</rt>
+    <rt>Corrective action</rt>
+    <rt>QMS</rt>
+    <uf>RMS</uf>
+    <fonte>AI Act, Art. 3(42)</fonte>
+  </voce>
+
+  <voce id="16">
+    <termineEN>Regulatory sandbox</termineEN>
+    <traduzioneIT>Sandbox regolamentare</traduzioneIT>
+    <definizioneEN>A controlled framework set up by a competent authority that facilitates the development, testing, and validation of innovative AI systems under strict regulatory oversight.</definizioneEN>
+    <bt>Innovation support</bt>
+    <rt>Testing environments</rt>
+    <rt>Competent authorities</rt>
+    <uf>AI sandbox</uf>
+    <fonte>AI Act, Art. 3(58) &amp; Art. 57–58</fonte>
+  </voce>
+
+  <voce id="17">
+    <termineEN>Harmonised standard</termineEN>
+    <traduzioneIT>Norma armonizzata</traduzioneIT>
+    <definizioneEN>A European standard as defined in Regulation (EU) No 1025/2012 on European standardisation.</definizioneEN>
+    <bt>Standards and conformity</bt>
+    <rt>Standardisation organisation</rt>
+    <uf>HS</uf>
+    <fonte>AI Act, Art. 3(29)</fonte>
+  </voce>
+
+  <voce id="18">
+    <termineEN>Agentic AI</termineEN>
+    <traduzioneIT>IA agentica</traduzioneIT>
+    <definizioneEN>A form of AI where models are embedded in agents that can autonomously perform complex tasks, including planning, interaction with digital/physical environments, and collaboration with other agents.</definizioneEN>
+    <bt>AI system</bt>
+    <nt>Multi-agent system</nt>
+    <rt>Autonomous agent</rt>
+    <rt>Orchestration</rt>
+    <uf>Agent-based AI</uf>
+    <fonte>NIST AI 100-5 (2024, draft); research literature</fonte>
+  </voce>
+
+  <voce id="19">
+    <termineEN>Quality management system (QMS)</termineEN>
+    <traduzioneIT>Sistema di gestione della qualità</traduzioneIT>
+    <definizioneEN>A formalised system that documents processes, procedures, and responsibilities for achieving quality policies and objectives, ensuring compliance with this Regulation for high-risk AI systems.</definizioneEN>
+    <bt>Compliance mechanisms</bt>
+    <rt>Conformity assessment</rt>
+    <rt>Risk management</rt>
+    <uf>QMS</uf>
+    <fonte>AI Act, Art. 3(33)</fonte>
+  </voce>
+
+  <voce id="20">
+    <termineEN>AI system</termineEN>
+    <traduzioneIT>Sistema di intelligenza artificiale</traduzioneIT>
+    <definizioneEN>A machine-based system that, for explicit or implicit objectives, infers how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments.</definizioneEN>
+    <bt>Digital technologies</bt>
+    <nt>GPAI system</nt>
+    <nt>High-risk AI system</nt>
+    <rt>Automation</rt>
+    <rt>Robotics</rt>
+    <uf>AI</uf>
+    <fonte>AI Act, Art. 3(1)</fonte>
+  </voce>
+
+  <voce id="21">
+    <termineEN>CE marking</termineEN>
+    <traduzioneIT>Marcatura CE</traduzioneIT>
+    <definizioneEN>A marking by which the provider indicates that an AI system or GPAI model is in conformity with the requirements of this Regulation and other applicable Union harmonisation legislation.</definizioneEN>
+    <bt>Conformity signs</bt>
+    <rt>EU declaration of conformity</rt>
+    <rt>Conformity assessment</rt>
+    <uf>CE logo</uf>
+    <fonte>AI Act, Art. 3(37)</fonte>
+  </voce>
+</tesauro>
