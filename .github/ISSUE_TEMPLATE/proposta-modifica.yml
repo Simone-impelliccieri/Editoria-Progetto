@@ -1,0 +1,37 @@
+name: Proposta di modifica
+description: Suggerisci un aggiornamento; la decisione sarà motivata pubblicamente
+title: "[Proposta] "
+body:
+  - type: input
+    id: voce
+    attributes:
+      label: ID o termine interessato
+      description: Indica l'ID della voce oppure il termine da aggiungere.
+      placeholder: "Esempio: ID 12"
+    validations:
+      required: true
+
+  - type: textarea
+    id: modifica
+    attributes:
+      label: Modifica proposta
+      description: Descrivi con chiarezza che cosa dovrebbe essere aggiunto o modificato.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivazione
+    attributes:
+      label: Motivazione
+      description: Spiega perché ritieni necessario questo aggiornamento.
+    validations:
+      required: true
+
+  - type: textarea
+    id: fonti
+    attributes:
+      label: Fonti di supporto
+      description: Indica riferimenti verificabili, come norme, standard o pubblicazioni.
+      placeholder: Inserisci titolo, autore o ente e collegamento alla fonte.
+    validations:
+      required: true
