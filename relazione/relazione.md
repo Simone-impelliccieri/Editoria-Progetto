@@ -5,7 +5,7 @@ date: a.a. 2025/2026
 institute: Università degli Studi di Milano
 course: Editoria Digitale
 tags: tesauro, XML, XSD, XSLT, workflow editoriale
-version: 0.1
+version: 1.0
 kind: Document
 bibliography: bibliografia.bib
 csl: IEEE.csl
@@ -122,9 +122,8 @@ Il flusso è il seguente:
 2. L'editor controlla che termine, dettagli, motivazione e fonti siano sufficienti.
 3. L'editor risponde pubblicamente con uno dei tre esiti: **approvata**, **da rivedere** oppure **rifiutata**, spiegandone il motivo.
 4. Se sono necessarie correzioni, l'utente che propone corregge l'Issue e la valutazione viene ripetuta.
-5. Dopo una proposta approvata  l'editor  modifica l'XML e rigenera il sito.
-6. L'editor esegue un push con i dati aggiornati della proposta.
-7. In seguito al comando push GitHub Actions valida i dati, genera l'HTML e pubblica il sito. L'Issue può essere chiusa.
+5. Dopo una proposta approvata  l'editor modifica l'XML ed esegue push con i dati aggiornati.
+6. In seguito al comando push GitHub Actions valida i dati, genera l'HTML e pubblica il sito. L'Issue può essere chiusa.
 
 ```{=latex}
 \begin{center}
@@ -208,7 +207,7 @@ Il progetto soddisfa le parti principali della consegna. Il file XML contiene 14
 Il progetto presenta alcuni limiti :
 
 - XSD impone un ID , ma non controlla da solo l'unicità né calcola il numero successivo;
-- la grafica è essenziale e semplice;
+- La grafica è essenziale e semplice;
 
 ## Conclusioni
 

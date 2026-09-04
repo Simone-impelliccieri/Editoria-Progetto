@@ -4,21 +4,22 @@
 
 body {
   margin: 0;
-  color: #292724;
-  background: #f5f2ea;
+  color: #252b31;
+  background: #f1f3f5;
   font: 16px/1.55 Arial, sans-serif;
 }
 
 .contenitore {
   width: 90%;
-  max-width: 900px;
+  max-width: 960px;
   margin: auto;
 }
 
 .intestazione {
-  padding: 2.5rem 0;
-  border-top: 6px solid #31584e;
-  border-bottom: 1px solid #b9b2a5;
+  padding: 3rem 0 2.5rem;
+  color: white;
+  background: #202c38;
+  border-top: 5px solid #71869a;
 }
 
 h1,
@@ -29,30 +30,38 @@ h1,
 }
 
 h1 {
-  margin: 0.3rem 0 0.7rem;
+  margin: 0.3rem 0 0.8rem;
   font-size: 2.5rem;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .sopratitolo,
 .identificatore,
 .etichetta-campo,
 .etichetta {
-  color: #31584e;
+  color: #36546f;
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+.intestazione .sopratitolo {
+  color: #becbd6;
+}
+
 .introduzione {
-  max-width: 680px;
+  max-width: 700px;
+  color: #dce2e7;
 }
 
 .pulsante {
   display: inline-block;
-  padding: 0.5rem 0.8rem;
-  color: white;
-  background: #31584e;
+  padding: 0.55rem 0.9rem;
+  color: #202c38;
+  background: white;
+  border: 1px solid white;
+  border-radius: 0;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -61,8 +70,11 @@ main {
 }
 
 .filtri {
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid #292724;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  background: #e2e6ea;
+  border-top: 3px solid #36546f;
+  border-bottom: 1px solid #aeb7c0;
 }
 
 .campi-filtri {
@@ -79,28 +91,40 @@ main {
 .campi-filtri select {
   display: block;
   width: 100%;
-  margin-top: 0.3rem;
-  padding: 0.45rem;
+  margin-top: 0.35rem;
+  padding: 0.5rem;
+  color: #252b31;
   background: white;
-  border: 1px solid #888278;
+  border: 1px solid #7e8993;
+  border-radius: 0;
+  font: inherit;
 }
 
 .voce {
-  margin-top: 1.5rem;
-  padding: 1rem 0 1.5rem;
-  border-top: 3px solid #31584e;
-  border-bottom: 1px solid #b9b2a5;
+  margin-bottom: 1.25rem;
+  padding: 1.4rem 1.6rem;
+  background: white;
+  border: 1px solid #c4cbd1;
+  border-left: 4px solid #36546f;
+  border-radius: 0;
 }
 
 .voce h2 {
-  margin: 0.2rem 0;
-  color: #24453d;
+  margin: 0 0 0.35rem;
+  color: #263f55;
 }
 
 .traduzione {
-  margin-bottom: 1.2rem;
-  color: #555047;
+  margin: 0 0 1rem;
+  padding-bottom: 0.9rem;
+  color: #525b63;
+  border-bottom: 1px solid #d9dee2;
   font-family: Georgia, serif;
+}
+
+.traduzione span {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
 }
 
 .gruppo-relazioni {
@@ -115,11 +139,12 @@ main {
 
 .fonti {
   padding-top: 0.5rem;
-  border-top: 1px solid #b9b2a5;
+  border-top: 1px solid #d9dee2;
 }
 
 .pie-di-pagina {
   padding: 1.2rem 0;
-  border-top: 1px solid #b9b2a5;
+  color: #dce2e7;
+  background: #202c38;
   font-size: 0.85rem;
 }
