@@ -2,6 +2,9 @@
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+  <xsl:output method="html" encoding="UTF-8"
+    doctype-system="about:legacy-compat" indent="yes"/>  <!-- per poter avere DOCTYPE -->
+
   <xsl:template match="/">
     <html lang="it">
       <head>
@@ -84,7 +87,7 @@
       <p class="etichetta-campo">EN</p>
       <h2 lang="en"><xsl:value-of select="termineEN"/></h2>
       <p class="traduzione lingua-it" lang="it">
-        <span>IT (traduzione)</span><xsl:text>: </xsl:text>
+        <span>IT (traduzione)</span>
         <xsl:value-of select="traduzioneIT"/>
       </p>
 

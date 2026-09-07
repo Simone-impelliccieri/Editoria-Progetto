@@ -1,3 +1,21 @@
+/* Tesauro bilingue sulla governance dell'IA
+   Foglio di stile della pagina generata da XSLT. */
+
+:root {
+  --inchiostro: #1c2229;
+  --inchiostro-tenue: #5c6873;
+  --blu: #36546f;
+  --blu-scuro: #1b2530;
+  --blu-titolo: #22384c;
+  --accento: #71869a;
+  --bordo: #d3dae0;
+  --filo: #e7ecf0;
+  --fondo: #eff2f5;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", Helvetica, Arial, sans-serif;
+  --colonna-etichetta: 9.5rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,188 +26,331 @@
 
 body {
   margin: 0;
-  color: #252b31;
-  background: #f1f3f5;
-  font: 16px/1.55 Arial, sans-serif;
+  color: var(--inchiostro);
+  background: var(--fondo);
+  font: 16px/1.65 var(--sans);
 }
 
 .contenitore {
   width: 90%;
-  max-width: 960px;
+  max-width: 980px;
   margin: auto;
 }
 
+/* Intestazione ------------------------------------------------- */
+
 .intestazione {
-  padding: 3rem 0 2.5rem;
+  padding: 3.5rem 0 3rem;
   color: white;
-  background: #202c38;
-  border-top: 5px solid #71869a;
+  background: linear-gradient(180deg, #26333f, var(--blu-scuro));
+  border-top: 5px solid var(--accento);
 }
 
 h1,
 .filtri h2,
 .voce h2 {
-  font-family: Georgia, serif;
+  font-family: var(--serif);
   font-weight: normal;
 }
 
 h1 {
-  margin: 0.3rem 0 0.8rem;
-  font-size: 2.5rem;
-  line-height: 1.15;
+  max-width: 20ch;
+  margin: 0.5rem 0 1rem;
+  font-size: 2.8rem;
+  line-height: 1.1;
 }
 
 .sopratitolo,
 .identificatore,
 .etichetta-campo,
-.etichetta {
-  color: #36546f;
-  font-size: 0.8rem;
+.etichetta,
+.campi-filtri label,
+.voce h3,
+.traduzione span {
+  font-size: 0.72rem;
   font-weight: bold;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
 .intestazione .sopratitolo {
-  color: #becbd6;
+  margin: 0;
+  color: #9db2c6;
 }
 
 .introduzione {
-  max-width: 700px;
-  color: #dce2e7;
+  max-width: 58ch;
+  color: #cbd6e0;
 }
 
 .pulsante {
   display: inline-block;
-  padding: 0.55rem 0.9rem;
-  color: #202c38;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1.35rem;
+  color: var(--blu-scuro);
   background: white;
   border: 1px solid white;
-  border-radius: 0;
   font-weight: bold;
   text-decoration: none;
 }
 
+.pulsante:hover {
+  color: white;
+  background: transparent;
+}
+
+/* Filtri ------------------------------------------------------- */
+
 main {
-  padding: 2rem 0;
+  padding-bottom: 4rem;
 }
 
 .filtri {
-  margin-bottom: 1.5rem;
-  padding: 1.2rem;
-  background: #e2e6ea;
-  border-top: 3px solid #36546f;
-  border-bottom: 1px solid #aeb7c0;
+  margin-bottom: 2rem;
+  padding: 1.15rem 1.5rem 1.4rem;
+  background: #e7ebef;
+  border-top: 3px solid var(--blu);
+  border-bottom: 1px solid #b6bfc8;
+}
+
+.filtri h2 {
+  margin: 0 0 0.9rem;
+  color: var(--blu-titolo);
+  font-size: 1.2rem;
 }
 
 .campi-filtri {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
 .campi-filtri label {
-  flex: 1;
-  font-size: 0.85rem;
-  font-weight: bold;
+  flex: 1 1 12rem;
+  color: var(--inchiostro-tenue);
 }
 
 .campi-filtri select {
   display: block;
   width: 100%;
-  margin-top: 0.35rem;
-  padding: 0.5rem;
-  color: #252b31;
+  margin-top: 0.45rem;
+  padding: 0.55rem;
   background: white;
-  border: 1px solid #7e8993;
+  border: 1px solid #9aa5af;
   border-radius: 0;
-  font: inherit;
+  font: 400 0.95rem var(--sans);
+  letter-spacing: normal;
+  text-transform: none;
 }
+
+/* Scheda della voce -------------------------------------------- */
 
 .voce {
-  margin-bottom: 1.25rem;
-  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.5rem;
+  padding: 1.75rem 2rem 1.9rem;
   background: white;
-  border: 1px solid #c4cbd1;
-  border-left: 4px solid #36546f;
-  border-radius: 0;
+  border: 1px solid var(--bordo);
+  border-left: 4px solid var(--blu);
+  box-shadow: 0 6px 18px rgba(28, 34, 41, 0.07);
 }
 
-.voce h2 {
-  margin: 0 0 0.35rem;
-  color: #263f55;
+.identificatore {
+  display: inline-block;
+  margin: 0 0.6rem 0 0;
+  color: #8d99a4;
 }
 
 .etichetta-campo {
   display: inline-block;
-  margin: 0.25rem 0;
-  padding: 0.15rem 0.45rem;
+  margin: 0;
+  padding: 0.2rem 0.55rem;
   color: white;
-  background: #36546f;
+  background: var(--blu);
 }
 
-.voce h3 {
-  margin: 0 0 0.5rem;
-  padding: 0.45rem 0.6rem;
-  color: #263f55;
-  background: #dce3e8;
-  font-size: 1rem;
+.voce h2 {
+  margin: 0.55rem 0 0;
+  color: var(--blu-titolo);
+  font-size: 1.75rem;
+  line-height: 1.2;
 }
 
 .traduzione {
-  margin: 0.75rem 0;
-  padding: 0.75rem 1rem;
-  color: #525b63;
-  background: #eef1f4;
-  font-family: Georgia, serif;
+  margin: 0.9rem 0 0;
+  padding-left: 1rem;
+  color: #46525d;
+  border-left: 3px solid #cfd9e2;
+  font-family: var(--serif);
+  font-size: 1.15rem;
 }
 
 .traduzione span {
-  color: #36546f;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
+  display: block;
+  color: var(--accento);
+  font-family: var(--sans);
+  font-size: 0.68rem;
 }
 
-.gruppo-relazioni {
-  display: grid;
-  grid-template-columns: 11rem 1fr;
-  gap: 0.5rem;
-  margin: 0.35rem 0;
-}
-
-.gruppo-relazioni ul,
-.fonti ul {
-  margin: 0;
-  padding: 0.45rem 0.75rem 0.45rem 1.6rem;
-  background: white;
-}
-
-.gruppo-relazioni .etichetta {
-  margin: 0;
-  padding: 0.45rem 0.6rem;
-  background: #dce3e8;
-}
+/* Sezioni interne alla scheda ---------------------------------- */
 
 .voce > section {
-  margin-top: 0.75rem;
-  padding: 0.75rem;
-  background: #eef1f4;
+  margin-top: 1.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--filo);
 }
 
+.voce h3 {
+  margin: 0;
+  color: var(--accento);
+  font-family: var(--sans);
+}
+
+/* Etichetta a sinistra, contenuto a destra */
 .voce > section.lingua-en,
-.fonti {
+.fonti,
+.gruppo-relazioni {
   display: grid;
-  grid-template-columns: 11rem 1fr;
-  gap: 0.5rem;
+  grid-template-columns: var(--colonna-etichetta) 1fr;
+  gap: 0.5rem 1.25rem;
+  align-items: start;
+}
+
+/* Allinea l'etichetta con la prima riga di testo accanto */
+.voce > section.lingua-en > h3,
+.fonti > h3 {
+  padding-top: 0.3rem;
 }
 
 .voce > section.lingua-en p {
   margin: 0;
-  padding: 0.45rem 0.75rem;
-  background: white;
+  color: #2c363f;
+  font-family: var(--serif);
+  font-size: 1.08rem;
+}
+
+/* Relazioni terminologiche ------------------------------------- */
+
+.voce > section:not([class]) > h3 {
+  margin-bottom: 1rem;
+}
+
+.gruppo-relazioni {
+  margin-bottom: 0.75rem;
+}
+
+.gruppo-relazioni .etichetta {
+  margin: 0;
+  padding: 0.3rem 0 0.3rem 0.7rem;
+  border-left: 3px solid;
+  line-height: 1.35;
+}
+
+.gruppo-relazioni ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gruppo-relazioni li {
+  padding: 0.32rem 0.75rem;
+  border-left: 2px solid;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+/* Un colore per ogni tipo di relazione. Il bordo sinistro non ha
+   colore proprio: eredita quello del testo. */
+
+.relazione-bt .etichetta, .relazione-bt li { color: #36546f; }
+.relazione-nt .etichetta, .relazione-nt li { color: #2c6a56; }
+.relazione-rt .etichetta, .relazione-rt li { color: #8a6118; }
+.relazione-uf .etichetta, .relazione-uf li { color: #674572; }
+
+.relazione-bt li { background: #e6ecf2; }
+.relazione-nt li { background: #e3efea; }
+.relazione-rt li { background: #f7f0dd; }
+.relazione-uf li { background: #f1eaf3; }
+
+/* Fonti e pie di pagina ---------------------------------------- */
+
+.fonti ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fonti li {
+  color: var(--inchiostro-tenue);
+  font-size: 0.92rem;
 }
 
 .pie-di-pagina {
-  padding: 1.2rem 0;
-  color: #dce2e7;
-  background: #202c38;
+  padding: 2rem 0;
+  color: #a8b5c1;
+  background: var(--blu-scuro);
+  border-top: 3px solid var(--accento);
   font-size: 0.85rem;
+}
+
+.pie-di-pagina p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid #f0b323;
+  outline-offset: 2px;
+}
+
+/* Schermi stretti ---------------------------------------------- */
+
+@media (max-width: 760px) {
+  .intestazione {
+    padding: 2.5rem 0 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .voce {
+    padding: 1.3rem 1.2rem 1.5rem;
+  }
+
+  .voce h2 {
+    font-size: 1.4rem;
+  }
+
+  .voce > section.lingua-en,
+  .fonti,
+  .gruppo-relazioni {
+    grid-template-columns: 1fr;
+  }
+
+  .voce > section.lingua-en > h3,
+  .fonti > h3 {
+    padding-top: 0;
+  }
+}
+
+/* Stampa ------------------------------------------------------- */
+
+@media print {
+  .filtri,
+  .azione-feedback,
+  .pie-di-pagina {
+    display: none;
+  }
+
+  .intestazione {
+    color: black;
+    background: white;
+  }
+
+  .voce {
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
 }
