@@ -150,4 +150,15 @@
     <uf>CE logo</uf>
     <fonte>AI Act, Art. 3(37)</fonte>
   </voce>
+
+  <voce id="22">
+    <termineEN>Deployer</termineEN>
+    <traduzioneIT>Deployer</traduzioneIT>
+    <definizioneEN>A person using an AI system.</definizioneEN>
+    <bt>Operators</bt>
+    <rt>Provider</rt>
+    <rt>AI system</rt>
+    <uf>User</uf>
+    <fonte>AI Act, Art. 3(4)</fonte>
+  </voce>
 </tesauro>
