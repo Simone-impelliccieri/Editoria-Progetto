@@ -74,7 +74,7 @@
 
         <footer class="pie-di-pagina">
           <div class="contenitore">
-            <p>Pagina generata automaticamente da XML mediante XSLT.</p>
+            <p>Progetto d'Esame di Editoria Digitale</p>
           </div>
         </footer>
       </body>
