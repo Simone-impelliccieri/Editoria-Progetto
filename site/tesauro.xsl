@@ -19,10 +19,6 @@
           <div class="contenitore">
             <p class="sopratitolo">Editoria Digitale</p>
             <h1>Tesauro bilingue sulla governance dell'IA</h1>
-            <p class="introduzione">
-              Termini inglesi, traduzioni italiane, definizioni e relazioni
-              terminologiche ricavati dal sorgente XML.
-            </p>
             <p class="azione-feedback">
               <a class="pulsante" href="https://github.com/Simone-impelliccieri/Editoria-Progetto/issues/new?template=proposta-modifica.yml">
                 Proponi una modifica
