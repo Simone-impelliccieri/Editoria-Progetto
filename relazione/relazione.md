@@ -21,7 +21,7 @@ Progettazione di un flusso editoriale digitale riproducibile
 
 ## Introduzione
 
-Il progetto realizza un prototipo di tesauro bilingue dedicato alla governance dell'intelligenza artificiale. Ogni voce contiene un termine inglese, la traduzione italiana, una definizione in inglese, le relazioni con altri termini e almeno una fonte.
+Il progetto realizza un tesauro bilingue dedicato alla governance dell'intelligenza artificiale. Ogni voce contiene un termine inglese, la traduzione italiana, una definizione in inglese, le relazioni con altri termini e almeno una fonte.
 
 Il contenuto è conservato in XML, la struttura è verificata mediante uno schema XSD e la pagina HTML è generata con una trasformazione XSLT.
 
@@ -91,7 +91,7 @@ Il punto di partenza è il foglio `tesauro.xlsx`. I dati selezionati sono stati 
 
 #### Scelta del formato sorgente
 
-Ho scelto XML perché  descrive bene dati gerarchici e permette di ripetere elementi come relazioni e fonti. È  anche facilmente estensibile e indipendente dalla piattaforma [@formatiXML]. JSON sarebbe una possibile alternativa, ma XML si integra direttamente con XSD e XSLT.
+Ho scelto XML perché  descrive bene dati gerarchici e permette di ripetere elementi. È  anche facilmente estensibile e indipendente dalla piattaforma [@formatiXML]. JSON sarebbe una possibile alternativa, ma XML si integra direttamente con XSD e XSLT.
 
 Esempio di elemento in tesauro:
 
@@ -155,7 +155,7 @@ flowchart TD
 
 #### Versionamento e storico
 
-Il ramo `main` contiene la versione corrente del progetto. Ogni aggiornamento approvato viene registrato in un commit che permette di sapere quali file sono stati modificati. Nel messaggio del commit può essere indicato anche il numero dell'Issue corrispondente.
+ Ogni aggiornamento approvato viene registrato in un commit che permette di sapere quali file sono stati modificati. Nel messaggio del commit può essere indicato anche il numero dell'Issue corrispondente con la digitura `closes #num issue` per poterla chiudere.
 
 ### Tecnologie adottate
 
@@ -188,11 +188,11 @@ Lo script esegue in ordine:
 4. applicazione di `site/tesauro.xsl`;
 5. scrittura di `site/index.html`.
 
-Nella repository il file `.github/workflows/pubblica-sito.yml` esegue lo stesso procedimento a ogni push su `main`: scarica i file, prepara Python, installa i requirements, genera la pagina(`site`) e la aggiorna tramite GitHub Pages. L'esecuzione in locale dello script non è parte della pubblicazione ma serve a verificare la validità dei dati.
+Nella repository il file `.github/workflows/pubblica-sito.yml` esegue lo stesso procedimento a ogni push. L'esecuzione in locale dello script non è parte della pubblicazione ma serve a verificare la validità dei dati.
 
 ### Utilizzo di intelligenza artificiale generativa
 
-Ho utilizzato strumenti di intelligenza artificiale generativa come supporto durante lo sviluppo del progetto. In particolare, li ho usati per ricevere idee generali su come organizzare il lavoro, per velocizzare alcuni passaggi, come la conversione iniziale dei dati dal file Excel al formato XML, e come aiuto nella realizzazione della parte grafica del sito.
+Ho utilizzato strumenti di intelligenza artificiale generativa come supporto durante lo sviluppo del progetto. In particolare, l'ho usata per avere idee generali su come organizzare il lavoro, per velocizzare alcuni passaggi, come la conversione iniziale dei dati dal file Excel al formato XML, e come aiuto nella realizzazione della parte grafica del sito.
 
 \clearpage
 
@@ -200,7 +200,7 @@ Ho utilizzato strumenti di intelligenza artificiale generativa come supporto dur
 
 ### Valutazione del flusso di produzione
 
-Il progetto soddisfa le parti principali della consegna. Il file XML contiene 14 voci bilingui e rappresenta anche relazioni e fonti. Lo schema XSD viene applicato prima della trasformazione. L'HTML è prodotto correttamente. Il sito permette  di applicare i tre filtri previsti.
+Il progetto soddisfa le parti principali della consegna. Il file XML contiene 14+1 voci bilingui(una aggiunta in seguito ad un Issue) e rappresenta anche relazioni e fonti. Lo schema XSD viene applicato prima della trasformazione. L'HTML è prodotto correttamente. Il sito permette  di applicare i tre filtri previsti.
 
 ### Limiti emersi
 

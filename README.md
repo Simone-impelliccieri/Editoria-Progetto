@@ -90,7 +90,7 @@ Lo script esegue la lettura di `data/tesauro.xml`, lettura di
 4. Se la proposta è approvata  aggiungere
    la nuova `<voce>` in `data/tesauro.xml` con il giusto ID. Rilanciare poi lo script di rigenerazione per 
    verificare la validità dei dati prima del push.
-5. Registrare la modifica con un commit che richiami il numero dell'Issue ed eseguire il push.
+5. Registrare la modifica con un commit che richiami il numero dell'Issue (inserendo `closes #num issue`) ed eseguire il push.
 6. Il push avvia il workflow, che rivalida i dati, rigenera l'HTML e aggiorna il
    sito pubblicato.
 
