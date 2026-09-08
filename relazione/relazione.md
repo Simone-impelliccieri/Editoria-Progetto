@@ -207,6 +207,7 @@ Il progetto soddisfa le parti principali della consegna. Il file XML contiene 14
 Il progetto presenta alcuni limiti :
 
 - XSD impone un ID , ma non controlla da solo l'unicità né calcola il numero successivo;
+- Lo schema valida la struttura ma non garantisce che `BT`, `NT` e `RT` puntino a voci presenti nel tesauro;
 - La grafica è essenziale e semplice;
 
 ## Conclusioni
