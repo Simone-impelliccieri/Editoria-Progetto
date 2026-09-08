@@ -25,7 +25,7 @@ relazione/   Relazione del progetto d'esame
    [`data/tesauro.xml`](data/tesauro.xml),
    [`schema/tesauro.xsd`](schema/tesauro.xsd).
 
-2. **Workflow di Pubblicazione.** Pubblicazione automatica su GitHub Pages  a ogni push su `main`. [`.github/workflows/pubblica-sito.yml`](.github/workflows/  pubblica-sito.yml), [`scripts/genera_html.py`](scripts/genera_html.py).
+2. **Workflow di Pubblicazione.** Pubblicazione automatica su GitHub Pages  a ogni push su `main`. [`.github/workflows/pubblica-sito.yml`](.github/workflows/pubblica-sito.yml), [`scripts/genera_html.py`](scripts/genera_html.py).
 
 3. **Raccolta Feedback.** Le proposte di aggiornamento arrivano come Issue
    pubbliche compilate attraverso il modulo "Proposta di modifica", che ha
