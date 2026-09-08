@@ -99,7 +99,7 @@ Esempio di elemento in tesauro:
 <voce id="17">
   <termineEN>Harmonised standard</termineEN>
   <traduzioneIT>Norma armonizzata</traduzioneIT>
-  <definizioneEN>A European standard as defined in Regulation (EU) No 1025/2012 on European standardisation.</definizioneEN>
+  <definizioneEN>A European standard....</definizioneEN>
   <bt>Standards and conformity</bt>
   <rt>Standardisation organisation</rt>
   <uf>HS</uf>
@@ -188,7 +188,7 @@ Lo script esegue in ordine:
 4. applicazione di `site/tesauro.xsl`;
 5. scrittura di `site/index.html`.
 
-Nella repository il file `.github/workflows/pubblica-sito.yml` ripete lo stesso procedimento a ogni push su `main`: scarica i file, prepara Python, installa i requirements, genera la pagina(`site`) e la aggiorna tramite GitHub Pages. [@githubPages]
+Nella repository il file `.github/workflows/pubblica-sito.yml` esegue lo stesso procedimento a ogni push su `main`: scarica i file, prepara Python, installa i requirements, genera la pagina(`site`) e la aggiorna tramite GitHub Pages. L'esecuzione in locale dello script non è parte della pubblicazione ma serve a verificare la validità dei dati.
 
 ### Utilizzo di intelligenza artificiale generativa
 
